@@ -8,10 +8,10 @@ const homeSlice = createSlice({
     name: "home",
     initialState,
     reducers: {
-        addCard(state, action) {
-            const tempCards = [...state.cards];
-            tempCards.push(action.payload);
-            state.cards = tempCards;
+        addCard(state, action) {},
+        getCards() {},
+        saveCards(state, action) {
+            state.cards = action.payload;
         }
     }
 });
